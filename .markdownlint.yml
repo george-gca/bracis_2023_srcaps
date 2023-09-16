@@ -1,0 +1,8 @@
+# https://github.com/DavidAnson/markdownlint#rules--aliases
+MD003: false # Allow different heading style
+MD012: false # Allow multiple consecutive blank lines
+MD022: false # Allow headers without surrounding blank lines
+MD024: false # Allow multiple headings with the same content
+MD025: false # Allow multiple top level headings in the same document
+MD033: false # Allow inline HTML
+MD034: false # Allow bare URL
