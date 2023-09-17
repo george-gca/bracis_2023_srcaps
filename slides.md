@@ -14,6 +14,8 @@ drawings:
 transition: slide-left
 title: Welcome to Slidev
 mdc: true
+# force dark mode
+colorSchema: 'dark'
 ---
 
 # Welcome to Slidev
