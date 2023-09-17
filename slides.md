@@ -11,7 +11,7 @@ info: |
   Learn more at [Sli.dev](https://sli.dev)
 drawings:
   persist: false
-transition: slide-left
+transition: fade
 title: Welcome to Slidev
 mdc: true
 # force dark mode
@@ -29,10 +29,7 @@ Presentation slides for developers
 </div>
 
 <div class="abs-br m-6 flex gap-2">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub"
+  <a href="https://github.com/george-gca/bracis_2023_srcaps" target="_blank" alt="GitHub"
     class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <carbon-logo-github />
   </a>
@@ -43,7 +40,7 @@ The last comment block of each slide will be treated as slide notes. It will be 
 -->
 
 ---
-transition: fade-out
+transition: fade
 ---
 
 # What is Slidev?
@@ -422,7 +419,6 @@ database "MySql" {
 
 ---
 src: ./pages/multiple-entries.md
-hide: false
 ---
 
 ---
@@ -433,3 +429,7 @@ class: text-center
 # Learn More
 
 [Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
+
+---
+src: ./pages/introduction.md
+---
