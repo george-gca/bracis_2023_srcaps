@@ -22,4 +22,7 @@ build:
 	fi
 
 run:
-	npm run-script dev
+	npm run dev
+
+export:
+	npm run export_full

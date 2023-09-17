@@ -2,13 +2,17 @@
   "name": "bracis_2023_presentation",
   "private": true,
   "scripts": {
-    "build": "slidev build",
+    "build": "slidev build --download",
     "dev": "slidev --open",
-    "export": "slidev export"
+    "export": "slidev export",
+    "export_full": "slidev export --with-toc --with-clicks"
   },
   "dependencies": {
     "@slidev/cli": "^0.43.3",
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.38.0"
   }
 }
