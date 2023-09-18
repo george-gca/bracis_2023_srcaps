@@ -14,11 +14,11 @@ Learn more about Slidev on [documentations](https://sli.dev/).
 
 - [x] introduce SISR
 - [x] show that most SISR solutions use CNNs, list a few
-- highlight the drawbacks of traditional cnns
+- [x] highlight the drawbacks of traditional cnns
   - maybe also include convnext here?
-- introduce the idea of capsule networks
-- show that capsule networks are a good fit for classification and segmentation
-- show that capsule networks are also a good fit for SISR
+- [x] introduce the idea of capsule networks
+- [x] show that capsule networks are a good fit for classification and segmentation
+- [x] show that capsule networks are also a good fit for SISR
   - show previous uses, how they basically don't change CapsNet that much
   - show lalonde's work and how we use it as a basis
 - diagrams of our model
@@ -40,3 +40,8 @@ Learn more about Slidev on [documentations](https://sli.dev/).
 - usage of capsule networks for other tasks
 - ConvNext
 - usage of ConvNext for SISR
+
+# References
+
+- https://medium.com/ai%C2%B3-theory-practice-business/understanding-hintons-capsule-networks-part-ii-how-capsules-work-153b6ade9f66#:~:text=%E2%80%9CInstead%20of%20aiming%20for%20viewpoint,computations%20on%20their%20inputs%20and
+- https://medium.com/hackernoon/uncovering-the-intuition-behind-capsule-networks-and-inverse-graphics-part-i-7412d121798d
