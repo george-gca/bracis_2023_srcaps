@@ -283,18 +283,65 @@ clicks: 8
 
 
 ---
+layout: center
+class: text-center
 ---
 
-# Capsule Networks
+# Why "Capsule"?
 
 <v-clicks>
 
-- Introduced by Hinton et al. in 2011
-  - First successful implementation by Sabour et al. in 2017
-- Proposes to solve some of the main flaws found in CNNs
-  - Inability to identify spatial hierarchy between elements
-  - Lack of rotation invariance
-- Inspired by the human visual system
-- Achieved good results in classification and segmentation tasks
+<br>“Instead of aiming for viewpoint invariance in the activities of <mark>"neurons"</mark> that use a single scalar output to summarize the activities of a local pool of replicated feature detectors, artificial neural networks should use local <mark>"capsules"</mark> that perform some quite complicated internal computations on their inputs and then encapsulate the results of these computations into a small vector of highly informative outputs.”
+
+</v-clicks>
+
+
+
+---
+---
+
+# Capsules Reconstructions
+
+| Properties | Reconstruction |
+| --- | --- |
+| Scale and thickness | <img src="images/capsules/reconstruction1.png" class="h-9"/> |
+| Localized part | <img src="images/capsules/reconstruction2.png" class="h-9"/> |
+| Stroke thickness | <img src="images/capsules/reconstruction3.png" class="h-9"/> |
+| Localized skew | <img src="images/capsules/reconstruction4.png" class="h-9"/> |
+| Width and translation | <img src="images/capsules/reconstruction5.png" class="h-9"/> |
+| Localized part | <img src="images/capsules/reconstruction6.png" class="h-9"/> |
+
+
+
+---
+---
+
+# Capsules Networks
+
+<v-clicks>
+
+- Capsules originally were used in classification tasks
+  - Achieved state-of-the-art results
+- Capsules networks have been explored in other tasks
+  - Object detection
+  - Image segmentation
+  - Visual question answering
+
+</v-clicks>
+
+
+
+---
+---
+
+# Capsules Networks
+
+<v-clicks>
+
+- Few explorations in SISR tasks
+  - Little modifications to the original CapsNet
+- Novel concepts have been applied to CapsNets
+  - Different capsules types
+  - New routing algorithms
 
 </v-clicks>
