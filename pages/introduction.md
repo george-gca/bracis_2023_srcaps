@@ -88,20 +88,20 @@ For most applications, high-resolution images are desirable and often necessary,
 
 
 ---
+preload: false
+clicks: 1
 ---
 
 # Upscaling (Increasing Resolution)
 
-<iframe
-    class="youtube absolute left-40"
-    :width="700"
-    :height="400"
-    :src="`https://www.youtube.com/embed/I_8ZH1Ggjk0?t=27&mute=1`"
-    title="YouTube"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-  />
+<img
+    v-if="$slidev.nav.clicks >= 1"
+    v-motion
+    :initial="{ x: -80, opacity: 0}"
+    :enter="{ x: 0, opacity: 1, transition: { delay: 500, duration: 1000 } }"
+    class="absolute top-30 left-35 w-178 h-100"
+    src="images/sisr/CSI.gif"
+/>
 
 
 ---
