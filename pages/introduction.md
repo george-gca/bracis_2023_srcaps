@@ -40,7 +40,7 @@ Today, the use of digital imagery is becoming increasingly common in areas previ
 
 ---
 preload: false
-clicks: 4
+clicks: 2
 ---
 
 # Computer Vision Tasks
@@ -55,16 +55,16 @@ clicks: 4
 />
 
 <img
-    v-if="$slidev.nav.clicks >= 2"
+    v-if="$slidev.nav.clicks >= 1"
     v-motion
     :initial="{ opacity: 0}"
-    :enter="{ opacity: 1, transition: { delay: 250, duration: 750 } }"
+    :enter="{ opacity: 1, transition: { delay: 1250, duration: 750 } }"
     class="absolute top-30 left-130 w-40 h-40"
     src="images/sisr/ankle2.png"
 />
 
 <img
-    v-if="$slidev.nav.clicks >= 3"
+    v-if="$slidev.nav.clicks >= 2"
     v-motion
     :initial="{ opacity: 0}"
     :enter="{ opacity: 1, transition: { delay: 250, duration: 750 } }"
@@ -73,10 +73,10 @@ clicks: 4
 />
 
 <img
-    v-if="$slidev.nav.clicks >= 4"
+    v-if="$slidev.nav.clicks >= 2"
     v-motion
     :initial="{ opacity: 0}"
-    :enter="{ opacity: 1, transition: { delay: 250, duration: 750 } }"
+    :enter="{ opacity: 1, transition: { delay: 1250, duration: 750 } }"
     class="absolute top-80 left-130 w-40 h-40"
     src="images/sisr/plate_sr.png"
 />
@@ -85,6 +85,23 @@ clicks: 4
 For most applications, high-resolution images are desirable and often necessary, as they provide clearer, sharper information for human perception and a wealth of detail for automatic interpretation and representation by computer programs. However, the acquisition of high-resolution images is not always possible, either due to the limitations of the equipment or the environment in which the image is captured. In these cases, the use of super resolution techniques is a possible solution.
 -->
 
+
+
+---
+---
+
+# Upscaling (Increasing Resolution)
+
+<iframe
+    class="youtube absolute left-40"
+    :width="700"
+    :height="400"
+    :src="`https://www.youtube.com/embed/I_8ZH1Ggjk0?t=27&mute=1`"
+    title="YouTube"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  />
 
 
 ---
@@ -144,7 +161,7 @@ preload: false
 clicks: 2
 ---
 
-# Super Resolution
+# Super-Resolution
 
 <img
     v-if="$slidev.nav.clicks >= 1"
@@ -196,7 +213,7 @@ preload: false
 clicks: 8
 ---
 
-# Super Resolution
+# Super-Resolution
 
 <v-clicks>
 
@@ -298,9 +315,99 @@ class: text-center
 
 
 ---
+preload: false
+clicks: 2
 ---
 
-# Capsules Reconstructions
+# Convolution VS Capsule
+
+<img
+    v-if="$slidev.nav.clicks >= 1"
+    v-motion
+    :initial="{ opacity: 0}"
+    :enter="{ opacity: 1, transition: { delay: 250, duration: 750 } }"
+    class="absolute top-30 left-60 w-40 h-40"
+    src="images/capsules/cnn_result_1.png"
+/>
+
+<img
+    v-if="$slidev.nav.clicks >= 1"
+    v-motion
+    :initial="{ opacity: 0}"
+    :enter="{ opacity: 1, transition: { delay: 1000, duration: 750 } }"
+    class="absolute top-30 left-130 w-40 h-40"
+    src="images/capsules/cnn_result_2.png"
+/>
+
+<img
+    v-if="$slidev.nav.clicks >= 2"
+    v-motion
+    :initial="{ opacity: 0}"
+    :enter="{ opacity: 1, transition: { delay: 250, duration: 750 } }"
+    class="absolute top-80 left-60 w-40 h-40"
+    src="images/capsules/capsule_result_1.png"
+/>
+
+<img
+    v-if="$slidev.nav.clicks >= 2"
+    v-motion
+    :initial="{ opacity: 0}"
+    :enter="{ opacity: 1, transition: { delay: 1000, duration: 750 } }"
+    class="absolute top-80 left-130 w-40 h-40"
+    src="images/capsules/capsule_result_2.png"
+/>
+
+
+
+---
+preload: false
+clicks: 2
+---
+
+# Convolution VS Capsule
+
+<img
+    v-if="$slidev.nav.clicks >= 1"
+    v-motion
+    :initial="{ opacity: 0}"
+    :enter="{ opacity: 1, transition: { delay: 250, duration: 750 } }"
+    class="absolute top-30 left-60 w-40 h-40"
+    src="images/capsules/capsule_result_1.png"
+/>
+
+<img
+    v-if="$slidev.nav.clicks >= 1"
+    v-motion
+    :initial="{ opacity: 0}"
+    :enter="{ opacity: 1, transition: { delay: 1000, duration: 750 } }"
+    class="absolute top-30 left-130 w-40 h-40"
+    src="images/capsules/capsule_result_1.png"
+/>
+
+<img
+    v-if="$slidev.nav.clicks >= 2"
+    v-motion
+    :initial="{ opacity: 0}"
+    :enter="{ opacity: 1, transition: { delay: 250, duration: 750 } }"
+    class="absolute top-80 left-60 w-40 h-40"
+    src="images/capsules/capsule_result_3.png"
+/>
+
+<img
+    v-if="$slidev.nav.clicks >= 2"
+    v-motion
+    :initial="{ opacity: 0}"
+    :enter="{ opacity: 1, transition: { delay: 1000, duration: 750 } }"
+    class="absolute top-80 left-130 w-40 h-40"
+    src="images/capsules/capsule_result_4.png"
+/>
+
+
+
+---
+---
+
+# Capsules' Reconstructions
 
 | Properties | Reconstruction |
 | --- | --- |
