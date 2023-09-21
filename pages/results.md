@@ -15,11 +15,13 @@
 
 <style>
 th:nth-child(2) {
-    background-color: lightgrey;
+    background-color: goldenrod;
+    color: black;
 }
 
 td:nth-child(2) {
-    background-color: lightgrey;
+    background-color: goldenrod;
+    color: black;
 }
 </style>
 

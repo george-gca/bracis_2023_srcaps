@@ -332,7 +332,7 @@ class: text-center
 <style>
 mark {
     background-color: goldenrod;
-    color: #000;
+    color: black;
 }
 </style>
 
