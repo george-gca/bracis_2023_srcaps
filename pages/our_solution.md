@@ -1,52 +1,39 @@
 ---
-preload: false
-clicks: 1
 ---
 
 # SRCaps
 
 <img
-    v-if="$slidev.nav.clicks >= 1"
-    v-motion
-    :initial="{ opacity: 0}"
-    :enter="{ opacity: 1, transition: { delay: 250, duration: 750 } }"
     class="absolute top-30 left-7 w-230"
+    v-click
     src="images/model/model_diagram.png"
 />
 
 
 
 ---
-preload: false
-clicks: 1
+hideInToc: true
 ---
 
 # SRCaps
 
 <img
-    v-if="$slidev.nav.clicks >= 1"
-    v-motion
-    :initial="{ opacity: 0}"
-    :enter="{ opacity: 1, transition: { delay: 250, duration: 750 } }"
     class="absolute top-50 left-7 w-230"
+    v-click
     src="images/model/capsblock_diagram.png"
 />
 
 
 
 ---
-preload: false
-clicks: 1
+hideInToc: true
 ---
 
 # SRCaps
 
 <img
-    v-if="$slidev.nav.clicks >= 1"
-    v-motion
-    :initial="{ opacity: 0}"
-    :enter="{ opacity: 1, transition: { delay: 250, duration: 750 } }"
     class="absolute top-40 left-12 w-220"
+    v-click
     src="images/model/upnet_diagram.png"
 />
 
@@ -72,8 +59,10 @@ clicks: 1
 
 
 ---
-layout: image-right
-image: images/model/adaptive_loss.png
+layout: figure-side
+figureCaption: The general loss function (left) and its gradient (right) for different values of its shape parameter α
+figureFootnoteNumber: 1
+figureUrl: images/model/adaptive_loss.png
 preload: false
 clicks: 1
 ---
@@ -88,6 +77,10 @@ clicks: 1
 | -2        | Geman-McClure                      |
 | $-\infty$ | Welsch/Leclerc                     |
 
+<Footnotes separator v-after>
+  <Footnote :number=1>Adapted from <a href="https://openaccess.thecvf.com/content_CVPR_2019/html/Barron_A_General_and_Adaptive_Robust_Loss_Function_CVPR_2019_paper.html">A General and Adaptive Robust Loss Function</a></Footnote>
+</Footnotes>
+
 <!-- <img
     v-if="$slidev.nav.clicks >= 1"
     v-motion
@@ -95,6 +88,7 @@ clicks: 1
     :enter="{ opacity: 1, transition: { delay: 250, duration: 750 } }"
     class="absolute top-40 left-12 w-150"
     src="images/model/adaptive_loss.png"
+
 /> -->
 
 
