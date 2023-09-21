@@ -24,7 +24,7 @@ td:nth-child(2) {
 </style>
 
 <!--
-Here we can see a quick comparison of our model and the other models we used as a basis. Even though our model have few layers, it has a considerable amount of parameters. This happens due to the vectorial nature of the capsules. Also, our model is the only that uses a different loss function, which is the adaptive loss function, and only our solution and RDN use dense connections.
+Here we can see a quick comparison of our model and the other models we used as a basis. Even though our model have few layers, it has a considerable amount of parameters. This happens due to the vectorial nature of the capsules. Also, our model is the only one that uses a different loss function, which is the adaptive loss function, and only our solution and RDN use dense connections.
 -->
 
 
