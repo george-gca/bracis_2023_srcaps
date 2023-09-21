@@ -3,6 +3,7 @@ theme: academic
 layout: cover
 class: text-white
 transition: fade
+hideInToc: true
 coverAuthor1: George Corrêa de Araújo
 coverAuthor2: Artur Jordão
 coverAuthor3: Hélio Pedrini
