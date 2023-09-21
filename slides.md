@@ -11,8 +11,9 @@ coverAuthorUrl1: https://george-gca.github.io/
 coverAuthorUrl2: https://arturjordao.github.io/
 coverAuthorUrl3: https://ic.unicamp.br/~helio/
 coverBackgroundUrl: images/cover/background.png
-coverBackgroundSource: Generated with Stable Diffusion 2.1
+coverBackgroundSource: Image generated with Stable Diffusion 2.1
 coverBackgroundSourceUrl: https://huggingface.co/spaces/stabilityai/stable-diffusion
+coverDate: 27/09/2023
 themeConfig:
   paginationX: r
   paginationY: t
@@ -47,8 +48,7 @@ info: |
 
 <!-- https://carbon-elements.netlify.app/icons/examples/preview/ -->
 <div class="abs-tr mx-26 my-6 flex gap-2 w">
-  <!-- TODO add link -->
-  <a href="https://github.com/george-gca/bracis_2023_srcaps" target="_blank" alt="Paper"
+  <a href="https://drive.google.com/file/d/1iSkqmgex7FveamrWbF2jfKJwKEDZbbXy/view?usp=sharing" target="_blank" alt="Paper"
     class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <carbon-white-paper />
   </a>
@@ -69,17 +69,17 @@ info: |
 </div>
 
 <!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
-
-https://huggingface.co/spaces/stabilityai/stable-diffusion
-
-https://www.fotor.com/features/ai-image-extender/
+Good afternoon, my name is George, and I going to present our paper entitled Single Image Super-Resolution Based on Capsule Neural Networks.
 -->
 
 ---
 layout: table-of-contents
 hideInToc: true
 ---
+
+<!--
+Here are some of the topics that I will be addressing in this presentation
+-->
 
 
 
@@ -91,4 +91,10 @@ src: ./pages/introduction.md
 
 ---
 src: ./pages/our_solution.md
+---
+
+
+
+---
+src: ./pages/results.md
 ---
