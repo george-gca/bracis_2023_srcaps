@@ -83,7 +83,7 @@ hideInToc: true
 </figure>
 
 <!--
-For most applications, high-resolution images are desirable and often necessary, as they provide clearer, sharper information for human perception and a wealth of detail for automatic interpretation and representation by computer programs. However, the acquisition of high-resolution images is not always possible, either due to the limitations of the equipment or the environment in which the image is captured. In these cases, the use of super resolution techniques is a possible solution.
+For most applications, high-resolution images are desirable and often necessary, as they provide clearer, sharper information for human perception and a wealth of detail for automatic interpretation and representation by computer programs. However, the acquisition of high-resolution images is not always possible, either due to the limitations of the equipment or the environment in which the image is captured. In these cases, the use of techniques to increase image resolution are a possible solution.
 -->
 
 
@@ -91,7 +91,7 @@ For most applications, high-resolution images are desirable and often necessary,
 ---
 ---
 
-# Upscaling (Increasing Resolution)
+# Upscaling
 
 <figure
     class="absolute top-30 left-50 w-142"
@@ -106,6 +106,7 @@ For most applications, high-resolution images are desirable and often necessary,
 </Footnotes>
 
 <!--
+The most well-known depiction of such a technique is shown here. In this scene from the TV show CSI, the investigators are able to zoom in on a reflection on a person's glasses and enhance the image to the point where they can read an information and gather new intel. Although this is a fictional scene, it is a good example of the expectations that people have regarding the capabilities of image processing techniques.
 -->
 
 
@@ -114,7 +115,7 @@ For most applications, high-resolution images are desirable and often necessary,
 hideInToc: true
 ---
 
-# Upscaling (Increasing Resolution)
+# Upscaling
 
 <figure
     class="absolute top-60 left-20 right-0 bottom-0"
@@ -202,7 +203,7 @@ In this context, a commonly used solution is upscaling, in which mathematical in
 </figure>
 
 <!--
-In recent years, deep learning has become a popular method for increasing the image resolution, a technique called super resolution. The idea is to train a neural network to learn the mapping between low resolution and high resolution images. The network is trained on a dataset of low and high resolution image pairs. The network is then able to take a low resolution image as input and output a high resolution image. As you can see, the result is much sharper than the bicubic interpolation.
+In recent years, deep learning has become a popular method for increasing the image resolution, a technique called super-resolution. The idea is to train a neural network to learn the mapping between low resolution and high resolution images. The network is trained on a dataset of low and high resolution image pairs. The network is then able to take a low resolution image as input and output a high resolution image. As you can see, the result is much sharper than the bicubic interpolation.
 -->
 
 
@@ -283,6 +284,7 @@ hideInToc: true
 />
 
 <!--
+Most super-resolution solutions use convolutional neural networks, like SRCNN, EDSR, RDN, RCAN, just to name a few, and they generate images with good visual quality. But CNNs have known drawbacks. For instance, let's take this example of a network created to classify images. It correctly classified the image as a person. But does it really understand what it means to be a person? If, for example, we change the position of an eye with the mouth, what result does it generate? It still identified it as a person, although this is rather questionable. What if I rotate it? It should still classify it as a person right? But it does not
 -->
 
 
@@ -305,6 +307,7 @@ hideInToc: true
 </v-clicks>
 
 <!--
+With these limitations in mind, Hinton and other authors introduced the concept of capsule neural networks in 2011. However, it was only in 2017 that Sabour et al. were able to implement a successful version of this network. Capsule networks propose to solve some of the main flaws found in CNNs, such as the inability to identify spatial hierarchy between elements and the lack of rotation invariance. They are also inspired by the human visual system, which is able to identify objects regardless of their position or rotation. Capsule networks have achieved good results in classification and segmentation tasks.
 -->
 
 
@@ -334,6 +337,7 @@ mark {
 </style>
 
 <!--
+But why the name "capsule"? We extracted this piece of paragraph from the original paper by Hinton, where it states: "Instead of aiming for viewpoint invariance in the activities of neurons that use a single scalar output to summarize the activities of a local pool of replicated feature detectors, artificial neural networks should use local capsules that perform some quite complicated internal computations on their inputs and then encapsulate the results of these computations into a small vector of highly informative outputs."
 -->
 
 
@@ -386,6 +390,7 @@ clicks: 2
 </Footnotes>
 
 <!--
+Ok, what does this all even mean? So, suppose we train a CNN to identify digits from the MNIST, and we ask it if these numbers are a seven. The outputs of the network show the confidence level of the network that the image is a seven. In the case of a capsule network, its output is not a single value, but a vector of values. Each value represents a property of the image, such as thickness, skew, width, etc. The length of the vector represents the probability that the image is a seven. The capsule network is able to identify the properties of the image and use them to classify it.
 -->
 
 
@@ -439,6 +444,7 @@ hideInToc: true
 </Footnotes>
 
 <!--
+Ok, the length of the output vector is the probability that the image is a seven. So what would be the output of the capsule network if the numbers were rotated, for example? Ideally, the capsule network would still identify the properties of the image and use them to classify it. The length of the vector would be about the same, but it would be slightely tilted, reflecting the rotation of the identified class. But does that hold in practice?
 -->
 
 
@@ -449,20 +455,21 @@ hideInToc: true
 
 # Capsules' Reconstructions
 
-| Properties | Reconstruction |
-| --- | --- |
-| Scale and thickness | <img src="images/capsules/reconstruction1.png" class="h-8"/> |
-| Localized part | <img src="images/capsules/reconstruction2.png" class="h-8"/> |
-| Stroke thickness | <img src="images/capsules/reconstruction3.png" class="h-8"/> |
-| Localized skew | <img src="images/capsules/reconstruction4.png" class="h-8"/> |
+| Properties            | Reconstruction                                               |
+| --------------------- | ------------------------------------------------------------ |
+| Scale and thickness   | <img src="images/capsules/reconstruction1.png" class="h-8"/> |
+| Localized part        | <img src="images/capsules/reconstruction2.png" class="h-8"/> |
+| Stroke thickness      | <img src="images/capsules/reconstruction3.png" class="h-8"/> |
+| Localized skew        | <img src="images/capsules/reconstruction4.png" class="h-8"/> |
 | Width and translation | <img src="images/capsules/reconstruction5.png" class="h-8"/> |
-| Localized part | <img src="images/capsules/reconstruction6.png" class="h-8"/> |
+| Localized part        | <img src="images/capsules/reconstruction6.png" class="h-8"/> |
 
 <Footnotes separator v-after>
   <Footnote>Adapted from <a href="https://dl.acm.org/doi/10.5555/3294996.3295142">Dynamic Routing Between Capsules</a></Footnote>
 </Footnotes>
 
 <!--
+In this example, we can see the reconstruction of the properties of the image by a trained capsule network. The first column shows the properties of the image, such as scale, thickness, skew, etc. The second column shows the reconstruction of the image based on the properties identified by some of the capsules. As you can see, the network is able to identify the properties of the image and use them to reconstruct it, like we can observe in the case of scale and thickness for the number 6, or the localized part in the number 4.
 -->
 
 
@@ -485,6 +492,7 @@ hideInToc: true
 </v-clicks>
 
 <!--
+In resume, capsules were originally used in classification tasks, and achieved state-of-the-art results. They also have been explored in other tasks, such as object detection, image segmentation, and visual question answering.
 -->
 
 
@@ -506,4 +514,5 @@ hideInToc: true
 </v-clicks>
 
 <!--
+However, there have been few explorations in SISR tasks. Most of them are little modifications to the original CapsNet. But novel concepts have already been applied to CapsNets, such as different capsules types and new routing algorithms. In this work, we used some novel capsules concepts and applied to the SISR problem.
 -->

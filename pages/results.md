@@ -24,6 +24,7 @@ td:nth-child(2) {
 </style>
 
 <!--
+Here we can see a quick comparison of our model and the other models we used as a basis. Even though our model have few layers, it has a considerable amount of parameters. This happens due to the vectorial nature of the capsules. Also, our model is the only that uses a different loss function, which is the adaptive loss function, and only our solution and RDN use dense connections.
 -->
 
 
@@ -42,6 +43,7 @@ td:nth-child(2) {
 </figure>
 
 <!--
+Here we can see a visual comparison of the models' results. Even the models with the best results failed to be able to recreate the crossed stripes in the tablecloth. This is due to the fact that the stripes are too thin, and the models tend to create smooth edges, which is a characteristic of the RCAN model.
 -->
 
 
@@ -60,6 +62,7 @@ hideInToc: true
 </figure>
 
 <!--
+In this other comparison, we can see that even though some models have better metrics, they fail to recreate subtle details of the image. For instance, the stroke width in the symbol above the letters, and also that is uniting different letters.
 -->
 
 
@@ -69,9 +72,11 @@ hideInToc: true
 
 # Conclusion
 
+<v-clicks>
+
 - The purpose of this work was to
   - evaluate the use of the capsules in SISR
-  - verify new forms of training and validate the results of NNs
+  - verify new forms of training and validating the results of NNs
 - We proposed SRCaps, a new model for SISR based on the CapsNet architecture
   - despite the inferior result, a smaller number of layers obtained a relevant result
   - nonlinearity function applied may be a limiting factor
@@ -83,3 +88,9 @@ hideInToc: true
   - replace the composition of the UPNet
   - new non-linearity and routing functions for the capsules
   - novel capsule models
+
+</v-clicks>
+
+<!--
+So, to conclude, the purpose of this work was to evaluate the use of the capsules in SISR, and to verify new forms of training and validating the results of NNs. We proposed SRCaps, a new model for SISR based on the CapsNet architecture. Despite the inferior result when compared to a few models, a smaller number of layers obtained a relevant result, which indicate that capsules might be a concept worth applying for SISR. We believe that the nonlinearity function applied may be a limiting factor, since it was designed with classification/segmentation in mind. We also highlight the RCAN ability to create smooth edges, the adaptive loss function, and that metrics not exactly reflect visual quality. For future research, we suggest to replace the composition of the UPNet, new non-linearity and routing functions for the capsules, and novel capsule models.
+-->
