@@ -222,7 +222,7 @@ hideInToc: true
 </v-clicks>
 
 <Footnotes separator v-after>
-  <Footnote :number=1>Adapted from <a href="https://medium.com/hackernoon/uncovering-the-intuition-behind-capsule-networks-and-inverse-graphics-part-i-7412d121798d">Uncovering the Intuition behind Capsule Networks and Inverse Graphics</a></Footnote>
+  <Footnote>Adapted from <a href="https://medium.com/hackernoon/uncovering-the-intuition-behind-capsule-networks-and-inverse-graphics-part-i-7412d121798d">Uncovering the Intuition behind Capsule Networks and Inverse Graphics</a></Footnote>
 </Footnotes>
 
 <img
@@ -370,7 +370,7 @@ clicks: 2
 />
 
 <Footnotes separator v-after>
-  <Footnote :number=1>Adapted from <a href="https://jhui.github.io/2017/11/03/Dynamic-Routing-Between-Capsules">Understanding Dynamic Routing between Capsules (Capsule Networks)</a></Footnote>
+  <Footnote>Adapted from <a href="https://jhui.github.io/2017/11/03/Dynamic-Routing-Between-Capsules">Understanding Dynamic Routing between Capsules (Capsule Networks)</a></Footnote>
 </Footnotes>
 
 
@@ -420,7 +420,7 @@ hideInToc: true
 />
 
 <Footnotes separator v-after>
-  <Footnote :number=1>Adapted from <a href="https://jhui.github.io/2017/11/03/Dynamic-Routing-Between-Capsules">Understanding Dynamic Routing between Capsules (Capsule Networks)</a></Footnote>
+  <Footnote>Adapted from <a href="https://jhui.github.io/2017/11/03/Dynamic-Routing-Between-Capsules">Understanding Dynamic Routing between Capsules (Capsule Networks)</a></Footnote>
 </Footnotes>
 
 
