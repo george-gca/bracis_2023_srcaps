@@ -8,7 +8,7 @@
     "export_full": "slidev export --with-toc --with-clicks"
   },
   "dependencies": {
-    "@slidev/cli": "^0.43.3",
+    "@slidev/cli": "^0.43.5",
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
     "slidev-theme-academic": "^1.1.3"
