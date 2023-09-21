@@ -98,3 +98,19 @@ src: ./pages/our_solution.md
 ---
 src: ./pages/results.md
 ---
+
+
+
+---
+hideInToc: true
+layout: figure
+figureCaption: Gandalf has questions
+figureFootnoteNumber: 1
+figureUrl: images/questions.jpg
+---
+
+# Questions?
+
+<Footnotes separator>
+  <Footnote :number=1><a href="https://imgflip.com/i/6tyqrz">imgflip</a></Footnote>
+</Footnotes>
