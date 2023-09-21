@@ -105,6 +105,9 @@ For most applications, high-resolution images are desirable and often necessary,
   <Footnote :number=1>Adapted from <a href="https://www.youtube.com/watch?v=I_8ZH1Ggjk0">CSI Zoom Enhance on YouTube</a></Footnote>
 </Footnotes>
 
+<!--
+-->
+
 
 
 ---
@@ -279,6 +282,9 @@ hideInToc: true
     src="images/capsules/face_result3.png"
 />
 
+<!--
+-->
+
 
 
 ---
@@ -297,6 +303,9 @@ hideInToc: true
 - Achieved good results in classification and segmentation tasks
 
 </v-clicks>
+
+<!--
+-->
 
 
 
@@ -323,6 +332,9 @@ mark {
     color: #000;
 }
 </style>
+
+<!--
+-->
 
 
 
@@ -373,6 +385,9 @@ clicks: 2
   <Footnote>Adapted from <a href="https://jhui.github.io/2017/11/03/Dynamic-Routing-Between-Capsules">Understanding Dynamic Routing between Capsules (Capsule Networks)</a></Footnote>
 </Footnotes>
 
+<!--
+-->
+
 
 
 ---
@@ -398,7 +413,7 @@ hideInToc: true
     :initial="{ opacity: 0}"
     :enter="{ opacity: 1, transition: { delay: 1000, duration: 750 } }"
     class="absolute top-30 left-130 w-40 h-40"
-    src="images/capsules/capsule_result_1.png"
+    src="images/capsules/capsule_result_2.png"
 />
 
 <img
@@ -423,6 +438,9 @@ hideInToc: true
   <Footnote>Adapted from <a href="https://jhui.github.io/2017/11/03/Dynamic-Routing-Between-Capsules">Understanding Dynamic Routing between Capsules (Capsule Networks)</a></Footnote>
 </Footnotes>
 
+<!--
+-->
+
 
 
 ---
@@ -444,6 +462,9 @@ hideInToc: true
   <Footnote>Adapted from <a href="https://dl.acm.org/doi/10.5555/3294996.3295142">Dynamic Routing Between Capsules</a></Footnote>
 </Footnotes>
 
+<!--
+-->
+
 
 
 ---
@@ -463,6 +484,9 @@ hideInToc: true
 
 </v-clicks>
 
+<!--
+-->
+
 
 
 ---
@@ -480,3 +504,6 @@ hideInToc: true
   - New routing algorithms
 
 </v-clicks>
+
+<!--
+-->
