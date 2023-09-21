@@ -3,11 +3,16 @@
 
 # SRCaps
 
-<img
+<figure
     class="absolute top-30 left-7 w-230"
     v-click
-    src="images/model/model_diagram.png"
-/>
+    >
+    <img src="images/model/model_diagram.png" />
+    <figcaption class="text-center">Model diagram</figcaption>
+</figure>
+
+<!--
+-->
 
 
 
@@ -17,11 +22,15 @@ hideInToc: true
 
 # SRCaps
 
-<img
+<figure
     class="absolute top-50 left-7 w-230"
-    v-click
-    src="images/model/capsblock_diagram.png"
-/>
+    >
+    <img src="images/model/capsblock_diagram.png" />
+    <figcaption class="text-center">Capsblock diagram</figcaption>
+</figure>
+
+<!--
+-->
 
 
 
@@ -31,11 +40,15 @@ hideInToc: true
 
 # SRCaps
 
-<img
+<figure
     class="absolute top-40 left-12 w-220"
-    v-click
-    src="images/model/upnet_diagram.png"
-/>
+    >
+    <img src="images/model/upnet_diagram.png" />
+    <figcaption class="text-center">UpNet diagram</figcaption>
+</figure>
+
+<!--
+-->
 
 
 
@@ -48,13 +61,16 @@ hideInToc: true
 
 - Training
   - DIV2K training set
-  - Losses: L1, SSIM, MS-SSIM, L1 after a few RDCBs, L1 + edge map with sobel filter, 3-PSNR, 3-SSIM, <u>adaptive loss</u>
-  - Model configuration: refer to paper
+  - Losses: L1, SSIM, MS-SSIM, L1 after a few RDCBs, L1 + edge map, 3-PSNR, 3-SSIM, <u>adaptive loss</u>
+  - Model configuration: refer to the paper
 - Validation
   - DIV2K validation set, Set5, Set14, BSD100 (B100), Urban100
   - Metrics: PSNR, SSIM, MS-SSIM, FLIP
 
 </v-clicks>
+
+<!--
+-->
 
 
 
@@ -64,7 +80,6 @@ figureCaption: The general loss function (left) and its gradient (right) for dif
 figureFootnoteNumber: 1
 figureUrl: images/model/adaptive_loss.png
 preload: false
-clicks: 1
 ---
 
 # Adaptive Loss
@@ -78,8 +93,11 @@ clicks: 1
 | $-\infty$ | Welsch/Leclerc                     |
 
 <Footnotes separator v-after>
-  <Footnote :number=1>Adapted from <a href="https://openaccess.thecvf.com/content_CVPR_2019/html/Barron_A_General_and_Adaptive_Robust_Loss_Function_CVPR_2019_paper.html">A General and Adaptive Robust Loss Function</a></Footnote>
+  <Footnote :number=1><a href="https://openaccess.thecvf.com/content_CVPR_2019/html/Barron_A_General_and_Adaptive_Robust_Loss_Function_CVPR_2019_paper.html">A General and Adaptive Robust Loss Function</a></Footnote>
 </Footnotes>
+
+<!--
+-->
 
 
 
@@ -147,3 +165,6 @@ clicks: 1
 <Footnotes separator v-after>
   <Footnote>Adapted from <a href="https://www.spiedigitallibrary.org/journals/journal-of-electronic-imaging/volume-19/issue-1/011003/Content-weighted-video-quality-assessment-using-a-three-component-image/10.1117/1.3267087.short?SSO=1">Content-weighted video quality assessment using a three-component image model</a></Footnote>
 </Footnotes>
+
+<!--
+-->
