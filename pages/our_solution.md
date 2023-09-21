@@ -81,112 +81,69 @@ clicks: 1
   <Footnote :number=1>Adapted from <a href="https://openaccess.thecvf.com/content_CVPR_2019/html/Barron_A_General_and_Adaptive_Robust_Loss_Function_CVPR_2019_paper.html">A General and Adaptive Robust Loss Function</a></Footnote>
 </Footnotes>
 
-<!-- <img
-    v-if="$slidev.nav.clicks >= 1"
-    v-motion
-    :initial="{ opacity: 0}"
-    :enter="{ opacity: 1, transition: { delay: 250, duration: 750 } }"
-    class="absolute top-40 left-12 w-150"
-    src="images/model/adaptive_loss.png"
-
-/> -->
-
 
 
 ---
-preload: false
-clicks: 2
 ---
 
 # Why not only PSNR and SSIM?
 
 <figure
-    class="absolute top-60 left-10 w-40 h-40"
-    v-if="$slidev.nav.clicks >= 1"
-    v-motion
-    :initial="{ opacity: 0}"
-    :enter="{ opacity: 1, transition: { delay: 250, duration: 750 } }"
+    class="absolute top-55 left-10 w-40 h-40"
+    v-click
     >
-    <img
-        src="images/metrics/Einstein/Einstein_a.png"
-    />
-    <figcaption>Reference</figcaption>
+    <img src="images/metrics/Einstein/Einstein_a.png" />
+    <figcaption class="text-center">Reference</figcaption>
 </figure>
 
 <figure
-    class="absolute top-30 left-70 w-40 h-40"
-    v-if="$slidev.nav.clicks >= 2"
-    v-motion
-    :initial="{ opacity: 0}"
-    :enter="{ opacity: 1, transition: { delay: 250, duration: 750 } }"
+    class="absolute top-25 left-70 w-40 h-40"
+    v-click
     >
-    <img
-        src="images/metrics/Einstein/Einstein_b.png"
-    />
-    <figcaption>Contrast enhanced</figcaption>
+    <img src="images/metrics/Einstein/Einstein_b.png" />
+    <figcaption class="text-center">Contrast enhanced</figcaption>
 </figure>
 
 <figure
-    class="absolute top-30 left-130 w-40 h-40"
-    v-if="$slidev.nav.clicks >= 2"
-    v-motion
-    :initial="{ opacity: 0}"
-    :enter="{ opacity: 1, transition: { delay: 250, duration: 750 } }"
+    class="absolute top-25 left-130 w-40 h-40"
+    v-after
     >
-    <img
-        src="images/metrics/Einstein/Einstein_c.png"
-    />
-    <figcaption>Gaussian noise</figcaption>
+    <img src="images/metrics/Einstein/Einstein_c.png" />
+    <figcaption class="text-center">Gaussian noise</figcaption>
 </figure>
 
 <figure
-    class="absolute top-30 left-190 w-40 h-40"
-    v-if="$slidev.nav.clicks >= 2"
-    v-motion
-    :initial="{ opacity: 0}"
-    :enter="{ opacity: 1, transition: { delay: 250, duration: 750 } }"
+    class="absolute top-25 left-190 w-40 h-40"
+    v-after
     >
-    <img
-        src="images/metrics/Einstein/Einstein_d.png"
-    />
-    <figcaption>Salt-pepper noise</figcaption>
+    <img src="images/metrics/Einstein/Einstein_d.png" />
+    <figcaption class="text-center">Salt-pepper noise</figcaption>
 </figure>
 
 <figure
-    class="absolute top-85 left-70 w-40 h-40"
-    v-if="$slidev.nav.clicks >= 2"
-    v-motion
-    :initial="{ opacity: 0}"
-    :enter="{ opacity: 1, transition: { delay: 250, duration: 750 } }"
+    class="absolute top-80 left-70 w-40 h-40"
+    v-after
     >
-    <img
-        src="images/metrics/Einstein/Einstein_b.png"
-    />
-    <figcaption>Speckle noise</figcaption>
+    <img src="images/metrics/Einstein/Einstein_e.png" />
+    <figcaption class="text-center">Speckle noise</figcaption>
 </figure>
 
 <figure
-    class="absolute top-85 left-130 w-40 h-40"
-    v-if="$slidev.nav.clicks >= 2"
-    v-motion
-    :initial="{ opacity: 0}"
-    :enter="{ opacity: 1, transition: { delay: 250, duration: 750 } }"
+    class="absolute top-80 left-130 w-40 h-40"
+    v-after
     >
-    <img
-        src="images/metrics/Einstein/Einstein_c.png"
-    />
-    <figcaption>JPEG compressed</figcaption>
+    <img src="images/metrics/Einstein/Einstein_f.png" />
+    <figcaption class="text-center">JPEG compressed</figcaption>
 </figure>
 
 <figure
-    class="absolute top-85 left-190 w-40 h-40"
-    v-if="$slidev.nav.clicks >= 2"
-    v-motion
-    :initial="{ opacity: 0}"
-    :enter="{ opacity: 1, transition: { delay: 250, duration: 750 } }"
+    class="absolute top-80 left-190 w-40 h-40"
+    v-after
     >
-    <img
-        src="images/metrics/Einstein/Einstein_d.png"
-    />
-    <figcaption>Blurred</figcaption>
+    <img src="images/metrics/Einstein/Einstein_g.png" />
+    <figcaption class="text-center">Blurred</figcaption>
 </figure>
+
+<Footnotes separator v-after>
+  <Footnote>Adapted from <a href="https://www.spiedigitallibrary.org/journals/journal-of-electronic-imaging/volume-19/issue-1/011003/Content-weighted-video-quality-assessment-using-a-three-component-image/10.1117/1.3267087.short?SSO=1">Content-weighted video quality assessment using a three-component image model</a></Footnote>
+</Footnotes>
