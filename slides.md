@@ -10,7 +10,7 @@ coverAuthor3: Hélio Pedrini
 coverAuthorUrl1: https://george-gca.github.io/
 coverAuthorUrl2: https://arturjordao.github.io/
 coverAuthorUrl3: https://ic.unicamp.br/~helio/
-coverBackgroundUrl: images/cover/background.png
+coverBackgroundUrl: /images/cover/background.png
 coverBackgroundSource: Image generated with Stable Diffusion 2.1
 coverBackgroundSourceUrl: https://huggingface.co/spaces/stabilityai/stable-diffusion
 coverDate: 27/09/2023
@@ -35,14 +35,14 @@ info: |
 <div class="abs-tl ml-12 my-6 flex gap-2">
   <a href="https://www.unicamp.br/" target="_blank" alt="Unicamp"
     class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <img src="images/cover/logo-unicamp-name-line-wht-wht-0120.png" class="w-10 h-10" />
+    <img src="/images/cover/logo-unicamp-name-line-wht-wht-0120.png" class="w-10 h-10" />
   </a>
 </div>
 
 <div class="abs-tl ml-26 my-6 flex gap-2">
   <a href="https://ic.unicamp.br/" target="_blank" alt="Instituto de Computação"
     class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <img src="images/cover/logo-ic-unicamp-slant-line-wht-wht-wht-0120.png" class="w-10 h-10" />
+    <img src="/images/cover/logo-ic-unicamp-slant-line-wht-wht-wht-0120.png" class="w-10 h-10" />
   </a>
 </div>
 
@@ -106,7 +106,7 @@ hideInToc: true
 layout: figure
 figureCaption: Gandalf has questions
 figureFootnoteNumber: 1
-figureUrl: images/questions.jpg
+figureUrl: /images/questions.jpg
 ---
 
 # Questions?

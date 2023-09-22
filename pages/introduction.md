@@ -7,7 +7,7 @@
     class="absolute top-25 left-35 w-35 h-35"
     v-click
     >
-    <img src="images/sisr/ankle1.png" />
+    <img src="/images/sisr/ankle1.png" />
     <figcaption class="text-center">MRI of ankle<sup>1</sup></figcaption>
 </figure>
 
@@ -15,7 +15,7 @@
     class="absolute top-76 left-35 w-35 h-35"
     v-after
     >
-    <img src="images/sisr/license_plate.png" />
+    <img src="/images/sisr/license_plate.png" />
     <figcaption class="text-center">License plate<sup>2</sup></figcaption>
 </figure>
 
@@ -23,7 +23,7 @@
     class="absolute top-25 left-95 w-110 h-70"
     v-after
     >
-    <img src="images/sisr/amazon_deforestation_20070812_lrg.jpg" />
+    <img src="/images/sisr/amazon_deforestation_20070812_lrg.jpg" />
     <figcaption class="text-center">Amazon deforestation<sup>3</sup></figcaption>
 </figure>
 
@@ -53,7 +53,7 @@ hideInToc: true
     class="absolute top-30 left-60 w-40 h-40"
     v-click
     >
-    <img src="images/sisr/ankle1.png" />
+    <img src="/images/sisr/ankle1.png" />
     <figcaption class="text-center">LR MRI of ankle<sup>1</sup></figcaption>
 </figure>
 
@@ -61,7 +61,7 @@ hideInToc: true
     class="absolute top-90 left-60 w-40 h-40"
     v-after
     >
-    <img src="images/sisr/plate_lr.png" />
+    <img src="/images/sisr/plate_lr.png" />
     <figcaption class="text-center">LR license plate<sup>2</sup></figcaption>
 </figure>
 
@@ -74,7 +74,7 @@ hideInToc: true
     class="absolute top-30 left-130 w-40 h-40"
     v-click
     >
-    <img src="images/sisr/ankle2.png" />
+    <img src="/images/sisr/ankle2.png" />
     <figcaption class="text-center">HR MRI of ankle<sup>1</sup></figcaption>
 </figure>
 
@@ -82,7 +82,7 @@ hideInToc: true
     class="absolute top-90 left-130 w-40 h-40"
     v-after
     >
-    <img src="images/sisr/plate_sr.png" />
+    <img src="/images/sisr/plate_sr.png" />
     <figcaption class="text-center">HR license plate<sup>2</sup></figcaption>
 </figure>
 
@@ -108,7 +108,7 @@ hideInToc: true
     class="absolute top-30 left-50 w-142"
     v-click
     >
-    <img src="images/sisr/CSI.gif" />
+    <img src="/images/sisr/CSI.gif" />
     <figcaption class="text-center">Increasing resolution as seen in fiction<sup>1</sup></figcaption>
 </figure>
 
@@ -133,7 +133,7 @@ The most well-known depiction of such a technique is shown here. In this scene f
     class="absolute top-60 left-20 right-0 bottom-0"
     v-click
     >
-    <img src="images/sisr/19021_x4.png" />
+    <img src="/images/sisr/19021_x4.png" />
     <!-- some weird bug forced me to set caption position -->
     <figcaption class="absolute top-21 left-4 right-0 bottom-0">LR image<sup>1</sup></figcaption>
 </figure>
@@ -162,7 +162,7 @@ The most well-known depiction of such a technique is shown here. In this scene f
     class="absolute top-30 left-110 right-0 bottom-0"
     v-click
     >
-    <img src="images/sisr/19021_x4_bicubic.png" />
+    <img src="/images/sisr/19021_x4_bicubic.png" />
     <figcaption class="text-center">Upscaled image</figcaption>
 </figure>
 
@@ -185,7 +185,7 @@ In this context, a commonly used solution is upscaling, in which mathematical in
     class="absolute top-60 left-20 right-0 bottom-0"
     v-click
     >
-    <img src="images/sisr/19021_x4.png" />
+    <img src="/images/sisr/19021_x4.png" />
     <!-- some weird bug forced me to set caption position -->
     <figcaption class="absolute top-21 left-4 right-0 bottom-0">LR image<sup>1</sup></figcaption>
 </figure>
@@ -214,7 +214,7 @@ In this context, a commonly used solution is upscaling, in which mathematical in
     class="absolute top-30 left-110 right-0 bottom-0"
     v-click
     >
-    <img src="images/sisr/19021.png" />
+    <img src="/images/sisr/19021.png" />
     <figcaption class="text-center">Super-resolution image</figcaption>
 </figure>
 
@@ -255,7 +255,7 @@ hideInToc: true
     :initial="{ opacity: 0}"
     :enter="{ opacity: 1, transition: { delay: 250, duration: 500 } }"
     class="absolute top-60 left-30 w-50 h-40"
-    src="images/capsules/face1.png"
+    src="/images/capsules/face1.png"
 />
 
 <img
@@ -264,7 +264,7 @@ hideInToc: true
     :initial="{ opacity: 0}"
     :enter="{ opacity: 1, transition: { delay: 250, duration: 500 } }"
     class="absolute top-105 left-30 w-50 h-15"
-    src="images/capsules/face_result1.png"
+    src="/images/capsules/face_result1.png"
 />
 
 <img
@@ -273,7 +273,7 @@ hideInToc: true
     :initial="{ opacity: 0}"
     :enter="{ opacity: 1, transition: { delay: 250, duration: 500 } }"
     class="absolute top-60 left-100 w-50 h-40"
-    src="images/capsules/face2.png"
+    src="/images/capsules/face2.png"
 />
 
 <img
@@ -282,7 +282,7 @@ hideInToc: true
     :initial="{ opacity: 0}"
     :enter="{ opacity: 1, transition: { delay: 250, duration: 500 } }"
     class="absolute top-105 left-100 w-50 h-15"
-    src="images/capsules/face_result2.png"
+    src="/images/capsules/face_result2.png"
 />
 
 <img
@@ -291,7 +291,7 @@ hideInToc: true
     :initial="{ opacity: 0}"
     :enter="{ opacity: 1, transition: { delay: 250, duration: 500 } }"
     class="absolute top-60 left-170 w-50 h-40"
-    src="images/capsules/face3.png"
+    src="/images/capsules/face3.png"
 />
 
 <img
@@ -300,7 +300,7 @@ hideInToc: true
     :initial="{ opacity: 0}"
     :enter="{ opacity: 1, transition: { delay: 250, duration: 500 } }"
     class="absolute top-105 left-170 w-50 h-15"
-    src="images/capsules/face_result3.png"
+    src="/images/capsules/face_result3.png"
 />
 
 <!--
@@ -387,7 +387,7 @@ clicks: 2
     :initial="{ opacity: 0}"
     :enter="{ opacity: 1, transition: { delay: 250, duration: 750 } }"
     class="absolute top-30 left-60 w-40 h-40"
-    src="images/capsules/cnn_result_1.png"
+    src="/images/capsules/cnn_result_1.png"
 />
 
 <img
@@ -396,7 +396,7 @@ clicks: 2
     :initial="{ opacity: 0}"
     :enter="{ opacity: 1, transition: { delay: 1000, duration: 750 } }"
     class="absolute top-30 left-130 w-40 h-40"
-    src="images/capsules/cnn_result_2.png"
+    src="/images/capsules/cnn_result_2.png"
 />
 
 <img
@@ -405,7 +405,7 @@ clicks: 2
     :initial="{ opacity: 0}"
     :enter="{ opacity: 1, transition: { delay: 250, duration: 750 } }"
     class="absolute top-80 left-60 w-40 h-40"
-    src="images/capsules/capsule_result_1.png"
+    src="/images/capsules/capsule_result_1.png"
 />
 
 <img
@@ -414,7 +414,7 @@ clicks: 2
     :initial="{ opacity: 0}"
     :enter="{ opacity: 1, transition: { delay: 1000, duration: 750 } }"
     class="absolute top-80 left-130 w-40 h-40"
-    src="images/capsules/capsule_result_2.png"
+    src="/images/capsules/capsule_result_2.png"
 />
 
 <Footnotes separator v-after>
@@ -449,7 +449,7 @@ hideInToc: true
     :initial="{ opacity: 0}"
     :enter="{ opacity: 1, transition: { delay: 250, duration: 750 } }"
     class="absolute top-30 left-60 w-40 h-40"
-    src="images/capsules/capsule_result_1.png"
+    src="/images/capsules/capsule_result_1.png"
 />
 
 <img
@@ -458,7 +458,7 @@ hideInToc: true
     :initial="{ opacity: 0}"
     :enter="{ opacity: 1, transition: { delay: 1000, duration: 750 } }"
     class="absolute top-30 left-130 w-40 h-40"
-    src="images/capsules/capsule_result_2.png"
+    src="/images/capsules/capsule_result_2.png"
 />
 
 <img
@@ -467,7 +467,7 @@ hideInToc: true
     :initial="{ opacity: 0}"
     :enter="{ opacity: 1, transition: { delay: 250, duration: 750 } }"
     class="absolute top-80 left-60 w-40 h-40"
-    src="images/capsules/capsule_result_3.png"
+    src="/images/capsules/capsule_result_3.png"
 />
 
 <img
@@ -476,7 +476,7 @@ hideInToc: true
     :initial="{ opacity: 0}"
     :enter="{ opacity: 1, transition: { delay: 1000, duration: 750 } }"
     class="absolute top-80 left-130 w-40 h-40"
-    src="images/capsules/capsule_result_4.png"
+    src="/images/capsules/capsule_result_4.png"
 />
 
 <Footnotes separator v-after>
@@ -503,12 +503,12 @@ hideInToc: true
 
 | Properties            | Reconstruction from capsules                                 |
 | --------------------- | ------------------------------------------------------------ |
-| Scale and thickness   | <img src="images/capsules/reconstruction1.png" class="h-8"/> |
-| Localized part        | <img src="images/capsules/reconstruction2.png" class="h-8"/> |
-| Stroke thickness      | <img src="images/capsules/reconstruction3.png" class="h-8"/> |
-| Localized skew        | <img src="images/capsules/reconstruction4.png" class="h-8"/> |
-| Width and translation | <img src="images/capsules/reconstruction5.png" class="h-8"/> |
-| Localized part        | <img src="images/capsules/reconstruction6.png" class="h-8"/> |
+| Scale and thickness   | <img src="/images/capsules/reconstruction1.png" class="h-8"/> |
+| Localized part        | <img src="/images/capsules/reconstruction2.png" class="h-8"/> |
+| Stroke thickness      | <img src="/images/capsules/reconstruction3.png" class="h-8"/> |
+| Localized skew        | <img src="/images/capsules/reconstruction4.png" class="h-8"/> |
+| Width and translation | <img src="/images/capsules/reconstruction5.png" class="h-8"/> |
+| Localized part        | <img src="/images/capsules/reconstruction6.png" class="h-8"/> |
 
 <Footnotes separator v-after>
   <Footnote>Adapted from <a href="https://dl.acm.org/doi/10.5555/3294996.3295142">Dynamic Routing Between Capsules</a></Footnote>
