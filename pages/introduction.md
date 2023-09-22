@@ -34,7 +34,7 @@
 </Footnotes>
 
 <!--
-use of digital image is increasingly common in areas like
+the use of digital image is really common in areas like
 
 However, some of these applications are still inefficient
 
@@ -333,6 +333,8 @@ Most super-resolution solutions use convolutional neural networks, like SRCNN, E
 </v-clicks>
 
 <!--
+With these limitations in mind
+
 With these limitations in mind, Hinton and other authors introduced the concept of capsule neural networks in 2011. However, it was only in 2017 that Sabour et al. were able to implement a successful version of this network. Capsule networks propose to solve some of the main flaws found in CNNs, such as the inability to identify spatial hierarchy between elements and the lack of rotation invariance. They are also inspired by the human visual system, which is able to identify objects regardless of their position or rotation. Capsule networks have achieved good results in classification and segmentation tasks.
 -->
 
@@ -482,9 +484,9 @@ hideInToc: true
 </Footnotes>
 
 <!--
-length of the output vector is the probability
-
 slightly tilted
+
+length of the output vector is the probability
 
 does that hold in practice?
 
@@ -513,7 +515,9 @@ hideInToc: true
 </Footnotes>
 
 <!--
-Properties of the class
+does that hold in practice?
+
+Properties of the classes
 
 In this example, we can see the reconstruction of the properties of the image by a trained capsule network. The first column shows the properties of the image, such as scale, thickness, skew, etc. The second column shows the reconstruction of the image based on the properties identified by some of the capsules. As you can see, the network is able to identify the properties of the classes and use them to reconstruct it, like we can observe in the case of scale and thickness for the number 6, or the localized part in the number 4.
 -->

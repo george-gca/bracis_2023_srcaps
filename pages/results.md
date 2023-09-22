@@ -26,6 +26,8 @@ td:nth-child(2) {
 </style>
 
 <!--
+Here we can see a quick comparison of our model
+
 Here we can see a quick comparison of our model and the other models we used as a basis. Even though our model have few layers, it has a considerable amount of parameters. This happens due to the vectorial nature of the capsules. Also, our model is the only one that uses a different loss function, which is the adaptive loss function, and only our solution and RDN use dense connections.
 -->
 
@@ -45,6 +47,12 @@ Here we can see a quick comparison of our model and the other models we used as 
 </figure>
 
 <!--
+Here we can see a visual comparison of the models' results
+
+stripes in the tablecloth
+
+smooth edges
+
 Here we can see a visual comparison of the models' results. Even the models with the best results failed to be able to recreate the crossed stripes in the tablecloth. This is due to the fact that the stripes are too thin, and the models tend to create smooth edges, which is a characteristic of the RCAN model.
 -->
 
@@ -94,5 +102,7 @@ In this other comparison, we can see that even though some models have better me
 </v-clicks>
 
 <!--
+capsules might be a concept worth applying for SISR
+
 So, to conclude, the purpose of this work was to evaluate the use of the capsules in SISR, and to verify new forms of training and validating the results of NNs. We proposed SRCaps, a new model for SISR based on the CapsNet architecture. Despite the inferior result when compared to a few models, a smaller number of layers obtained a relevant result, which indicate that capsules might be a concept worth applying for SISR. We believe that the nonlinearity function applied may be a limiting factor, since it was designed with classification/segmentation in mind. We also highlight the RCAN ability to create smooth edges, the adaptive loss function, and that metrics not exactly reflect visual quality. For future research, we suggest to replace the composition of the UPNet, new non-linearity and routing functions for the capsules, and novel capsule models.
 -->

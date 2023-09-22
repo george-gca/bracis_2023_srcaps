@@ -89,6 +89,8 @@ This is the diagram of the UPNet, which is responsible for the upsampling of the
 </v-clicks>
 
 <!--
+Model configuration like kernel size, batch size, number of epochs, and so on, please refer to the paper
+
 For training we used the training set of the DIV2K dataset, which is composed by a wide variety of image types. We investigated a miriad of loss functions combinations, including L1, SSIM, MS-SSIM, edge map, and a few others. For our final version we stick with the adaptive loss function. For more information about number of epochs, model params, and other details, please refer to the paper. For validation we used a collection of commonly used datasets, composed of the validation set of the DIV2K, as well as the Set5, Set14, B100, and Urban100 datasets. For metrics we used PSNR, SSIM, MS-SSIM, and FLIP. For more information about the metrics, please refer to the paper. A few questions might arise, besides why we used capsules. So let's answer a few of them.
 -->
 
@@ -192,5 +194,7 @@ Why did we stick with adaptive loss? Well, we tested a lot of different loss fun
 </Footnotes>
 
 <!--
+Another question is
+
 Another question is, why not only use PSNR and SSIM? Well, PSNR and SSIM are good metrics, but they are not perfect. For example, let's take a look at this image. This is the reference image. Here we can see a lot of different variations of the reference image. One thing that they all have in common is that they have the same PSNR values calculated from the reference image, but clearly some are closer to the original image, or at least more recognizable, than others. For that reason, we decided to use a combination of metrics, including PSNR and SSIM, but also MS-SSIM and FLIP.
 -->
