@@ -69,7 +69,7 @@ info: |
 </div>
 
 <!--
-Good afternoon, my name is George, and I going to present our paper entitled Single Image Super-Resolution Based on Capsule Neural Networks.
+Good afternoon, my name is George, and I am going to present our paper entitled Single Image Super-Resolution Based on Capsule Neural Networks.
 -->
 
 ---

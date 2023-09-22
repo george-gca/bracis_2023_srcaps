@@ -12,6 +12,14 @@
 </figure>
 
 <!--
+This is the diagram of our model
+
+Based on the capsnet architecture introduced by LaLonde and Bagci
+
+During training
+
+sequence of capsule blocks
+
 This is the diagram of our model, named SRCaps. It is based on the CapsNet architecture introduced in the work of LaLonde and Bagci. During training, the model receives a batch of images patches pairs, one with low resolution and the other with high resolution. The low resolution image is fed to the encoder, which is composed of a single convolutional layer. The output of the encoder is then fed to a sequence of capsule blocks, each having a residual connection with its input. The output of the last capsule block is then fed to another convolutional layer, which has a residual connection with the output of the first convolutional layer. Then the output of the last convolutional layer is fed to the UPNet, which is responsible for the upsampling of the image. The output of the UPNet is then compared to the high resolution image using a loss function. The loss function is then used to update the weights of the model. The main difference between the training and validation phases is that during validation, the model receives a single LR/HR image pair, instead of a batch of patches per step.
 -->
 
@@ -31,6 +39,10 @@ hideInToc: true
 </figure>
 
 <!--
+main building block of our model
+
+sequence of convolutional capsules
+
 This is the diagram of the CapsBlock, which is the main building block of our model. It is composed of a sequence of convolutional capsules, each having a residual connection with its input. The output of each capsule is concatenated, creating what is called a dense connection, and then fed to a convolutional layer. The output of this convolutional layer is the output of this block.
 -->
 
@@ -50,6 +62,10 @@ hideInToc: true
 </figure>
 
 <!--
+responsible for the upsampling of the image
+
+sequence of convolutional layers intertwined with pixel shuffle layers, or subpixel convolutions
+
 This is the diagram of the UPNet, which is responsible for the upsampling of the image. It is composed of a sequence of convolutional layers, intertwined with layers of pixel shuffle, or subpixel convolutions. At the output of each pixel shuffle layer the image is upsampled by a factor of 2 (or 3). The output of the last pixel shuffle layer is the output of the UPNet. In our case, we only used the path above, since we focused on a 4x upsampling factor.
 -->
 
@@ -101,6 +117,10 @@ preload: false
 </Footnotes>
 
 <!--
+A few questions might arise, besides why we used capsules.
+
+Why did we stick with adaptive loss?
+
 Why did we stick with adaptive loss? Well, we tested a lot of different loss functions, and we found that the adaptive loss function was the one that gave us the best results. The adaptive loss function is a generalization of a lot of loss functions, and it is defined by a shape parameter alpha and a scale parameter c. When alpha is equal to 2, the adaptive loss function is equivalent to the L2 loss function. When alpha is equal to 1, the adaptive loss function is equivalent to the Charbonnier loss function, which itself is a generalization of the L1 and L2 loss functions, and so on. In our case, we started with alpha equal to 1, which is equivalent to the Charbonnier loss function, and let the network learn during training the best value of alpha and c.
 -->
 
