@@ -10,7 +10,7 @@ coverAuthor3: Hélio Pedrini
 coverAuthorUrl1: https://george-gca.github.io/
 coverAuthorUrl2: https://arturjordao.github.io/
 coverAuthorUrl3: https://ic.unicamp.br/~helio/
-coverBackgroundUrl: images/cover/background.png
+coverBackgroundUrl: /images/cover/background.png
 coverBackgroundSource: Image generated with Stable Diffusion 2.1
 coverBackgroundSourceUrl: https://huggingface.co/spaces/stabilityai/stable-diffusion
 coverDate: 27/09/2023
@@ -106,7 +106,7 @@ hideInToc: true
 layout: figure
 figureCaption: Gandalf has questions
 figureFootnoteNumber: 1
-figureUrl: images/questions.jpg
+figureUrl: /images/questions.jpg
 ---
 
 # Questions?
