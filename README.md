@@ -1,11 +1,12 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# Single Image Super-Resolution Based on Capsule Neural Networks
 
-To start the slide show:
+[![paper](https://img.shields.io/badge/paper-pdf-red.svg)](https://drive.google.com/file/d/1iSkqmgex7FveamrWbF2jfKJwKEDZbbXy/view?usp=sharing) [![slides](https://img.shields.io/badge/slides-web-blue.svg)](https://george-gca.github.io/bracis_2023_srcaps/) ![GitHub](https://img.shields.io/github/license/george-gca/bracis_2023_srcaps)
 
+This presentation is powered by [Slidev](https://github.com/slidevjs/slidev).
+
+To run the slide show locally:
+
+- [install node.js](https://george-gca.github.io/blog/2023/slidev_for_non_web_devs/)
 - `npm install`
 - `npm run dev`
 - visit http://localhost:3030
-
-Edit the [slides.md](./slides.md) to see the changes.
-
-Learn more about Slidev on [documentations](https://sli.dev/).
