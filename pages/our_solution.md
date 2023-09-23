@@ -4,8 +4,8 @@
 # SRCaps
 
 <figure
-    class="absolute top-30 left-7 w-230"
     v-click
+    class="absolute top-30 left-7 w-230"
     >
     <img src="/images/model/model_diagram.png" />
     <figcaption class="text-center">Model diagram</figcaption>
@@ -134,56 +134,56 @@ Why did we stick with adaptive loss? Well, we tested a lot of different loss fun
 # Why not only use PSNR and SSIM?
 
 <figure
-    class="absolute top-55 left-10 w-40 h-40"
     v-click
+    class="absolute top-55 left-10 w-40 h-40"
     >
     <img src="/images/metrics/Einstein/Einstein_a.png" />
     <figcaption class="text-center">Reference</figcaption>
 </figure>
 
 <figure
-    class="absolute top-25 left-70 w-40 h-40"
     v-click
+    class="absolute top-25 left-70 w-40 h-40"
     >
     <img src="/images/metrics/Einstein/Einstein_b.png" />
     <figcaption class="text-center">Contrast enhanced</figcaption>
 </figure>
 
 <figure
-    class="absolute top-25 left-130 w-40 h-40"
     v-after
+    class="absolute top-25 left-130 w-40 h-40"
     >
     <img src="/images/metrics/Einstein/Einstein_c.png" />
     <figcaption class="text-center">Gaussian noise</figcaption>
 </figure>
 
 <figure
-    class="absolute top-25 left-190 w-40 h-40"
     v-after
+    class="absolute top-25 left-190 w-40 h-40"
     >
     <img src="/images/metrics/Einstein/Einstein_d.png" />
     <figcaption class="text-center">Salt-pepper noise</figcaption>
 </figure>
 
 <figure
-    class="absolute top-80 left-70 w-40 h-40"
     v-after
+    class="absolute top-80 left-70 w-40 h-40"
     >
     <img src="/images/metrics/Einstein/Einstein_e.png" />
     <figcaption class="text-center">Speckle noise</figcaption>
 </figure>
 
 <figure
-    class="absolute top-80 left-130 w-40 h-40"
     v-after
+    class="absolute top-80 left-130 w-40 h-40"
     >
     <img src="/images/metrics/Einstein/Einstein_f.png" />
     <figcaption class="text-center">JPEG compressed</figcaption>
 </figure>
 
 <figure
-    class="absolute top-80 left-190 w-40 h-40"
     v-after
+    class="absolute top-80 left-190 w-40 h-40"
     >
     <img src="/images/metrics/Einstein/Einstein_g.png" />
     <figcaption class="text-center">Blurred</figcaption>

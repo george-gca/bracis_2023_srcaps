@@ -39,8 +39,8 @@ Here we can see a quick comparison of our model and the other models we used as 
 # Results
 
 <figure
-    class="absolute top-30 left-7 w-230"
     v-click
+    class="absolute top-30 left-7 w-230"
     >
     <img src="/images/results/result_set14_barbara.png" />
     <figcaption class="text-center">Model results for “barbara” image from Set14 dataset</figcaption>

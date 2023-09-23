@@ -4,24 +4,24 @@
 # Computer Vision Tasks
 
 <figure
-    class="absolute top-25 left-35 w-35 h-35"
     v-click
+    class="absolute top-25 left-35 w-35 h-35"
     >
     <img src="/images/sisr/ankle1.png" />
     <figcaption class="text-center">MRI of ankle<sup>1</sup></figcaption>
 </figure>
 
 <figure
-    class="absolute top-76 left-35 w-35 h-35"
     v-after
+    class="absolute top-76 left-35 w-35 h-35"
     >
     <img src="/images/sisr/license_plate.png" />
     <figcaption class="text-center">License plate<sup>2</sup></figcaption>
 </figure>
 
 <figure
-    class="absolute top-25 left-95 w-110 h-70"
     v-after
+    class="absolute top-25 left-95 w-110 h-70"
     >
     <img src="/images/sisr/amazon_deforestation_20070812_lrg.jpg" />
     <figcaption class="text-center">Amazon deforestation<sup>3</sup></figcaption>
@@ -50,16 +50,16 @@ hideInToc: true
 # Computer Vision Tasks
 
 <figure
-    class="absolute top-30 left-60 w-40 h-40"
     v-click
+    class="absolute top-30 left-60 w-40 h-40"
     >
     <img src="/images/sisr/ankle1.png" />
     <figcaption class="text-center">LR MRI of ankle<sup>1</sup></figcaption>
 </figure>
 
 <figure
-    class="absolute top-90 left-60 w-40 h-40"
     v-after
+    class="absolute top-90 left-60 w-40 h-40"
     >
     <img src="/images/sisr/plate_lr.png" />
     <figcaption class="text-center">LR license plate<sup>2</sup></figcaption>
@@ -71,16 +71,16 @@ hideInToc: true
 </Footnotes>
 
 <figure
-    class="absolute top-30 left-130 w-40 h-40"
     v-click
+    class="absolute top-30 left-130 w-40 h-40"
     >
     <img src="/images/sisr/ankle2.png" />
     <figcaption class="text-center">HR MRI of ankle<sup>1</sup></figcaption>
 </figure>
 
 <figure
-    class="absolute top-90 left-130 w-40 h-40"
     v-after
+    class="absolute top-90 left-130 w-40 h-40"
     >
     <img src="/images/sisr/plate_sr.png" />
     <figcaption class="text-center">HR license plate<sup>2</sup></figcaption>
@@ -105,8 +105,8 @@ hideInToc: true
 # "Enhance"
 
 <figure
-    class="absolute top-30 left-50 w-142"
     v-click
+    class="absolute top-30 left-50 w-142"
     >
     <img src="/images/sisr/CSI.gif" />
     <figcaption class="text-center">Increasing resolution as seen in fiction<sup>1</sup></figcaption>
@@ -130,8 +130,8 @@ The most well-known depiction of such a technique is shown here. In this scene f
 # Upscaling
 
 <figure
-    class="absolute top-60 left-20 right-0 bottom-0"
     v-click
+    class="absolute top-60 left-20 right-0 bottom-0"
     >
     <img src="/images/sisr/19021_x4.png" />
     <!-- some weird bug forced me to set caption position -->
@@ -143,13 +143,14 @@ The most well-known depiction of such a technique is shown here. In this scene f
 </Footnotes>
 
 <div
-    class="absolute top-75 left-57 text-[#2B90B6] -z-1"
     v-click
+    class="absolute top-75 left-57 text-[#2B90B6] -z-1"
     >
     bicubic interpolation
 </div>
 
-<arrow v-after
+<arrow
+    v-after
     x1="245"
     y1="290"
     x2="395"
@@ -159,8 +160,8 @@ The most well-known depiction of such a technique is shown here. In this scene f
     arrowSize="1" />
 
 <figure
-    class="absolute top-30 left-110 right-0 bottom-0"
     v-click
+    class="absolute top-30 left-110 right-0 bottom-0"
     >
     <img src="/images/sisr/19021_x4_bicubic.png" />
     <figcaption class="text-center">Upscaled image</figcaption>
@@ -182,8 +183,8 @@ In this context, a commonly used solution is upscaling, in which mathematical in
 # Super-Resolution
 
 <figure
-    class="absolute top-60 left-20 right-0 bottom-0"
     v-click
+    class="absolute top-60 left-20 right-0 bottom-0"
     >
     <img src="/images/sisr/19021_x4.png" />
     <!-- some weird bug forced me to set caption position -->
@@ -195,13 +196,14 @@ In this context, a commonly used solution is upscaling, in which mathematical in
 </Footnotes>
 
 <div
-    class="absolute top-75 left-63 text-[#2B90B6] -z-1"
     v-click
+    class="absolute top-75 left-63 text-[#2B90B6] -z-1"
     >
     neural network
 </div>
 
-<arrow v-after
+<arrow
+    v-after
     x1="245"
     y1="290"
     x2="395"
@@ -211,8 +213,8 @@ In this context, a commonly used solution is upscaling, in which mathematical in
     arrowSize="1" />
 
 <figure
-    class="absolute top-30 left-110 right-0 bottom-0"
     v-click
+    class="absolute top-30 left-110 right-0 bottom-0"
     >
     <img src="/images/sisr/19021.png" />
     <figcaption class="text-center">Super-resolution image</figcaption>
@@ -229,8 +231,6 @@ In recent years, deep learning has become a popular method for increasing the im
 
 
 ---
-preload: false
-clicks: 8
 hideInToc: true
 ---
 
@@ -249,59 +249,37 @@ hideInToc: true
   <Footnote>Adapted from <a href="https://medium.com/hackernoon/uncovering-the-intuition-behind-capsule-networks-and-inverse-graphics-part-i-7412d121798d">Uncovering the Intuition behind Capsule Networks and Inverse Graphics</a></Footnote>
 </Footnotes>
 
-<img
-    v-if="$slidev.nav.clicks >= 3"
-    v-motion
-    :initial="{ opacity: 0}"
-    :enter="{ opacity: 1, transition: { delay: 250, duration: 500 } }"
-    class="absolute top-60 left-30 w-50 h-40"
-    src="/images/capsules/face1.png"
-/>
+<v-clicks>
+  <img
+      class="absolute top-60 left-30 w-50 h-40"
+      src="/images/capsules/face1.png"
+  />
 
-<img
-    v-if="$slidev.nav.clicks >= 4"
-    v-motion
-    :initial="{ opacity: 0}"
-    :enter="{ opacity: 1, transition: { delay: 250, duration: 500 } }"
-    class="absolute top-105 left-30 w-50 h-15"
-    src="/images/capsules/face_result1.png"
-/>
+  <img
+      class="absolute top-105 left-30 w-50 h-15"
+      src="/images/capsules/face_result1.png"
+  />
 
-<img
-    v-if="$slidev.nav.clicks >= 5"
-    v-motion
-    :initial="{ opacity: 0}"
-    :enter="{ opacity: 1, transition: { delay: 250, duration: 500 } }"
-    class="absolute top-60 left-100 w-50 h-40"
-    src="/images/capsules/face2.png"
-/>
+  <img
+      class="absolute top-60 left-100 w-50 h-40"
+      src="/images/capsules/face2.png"
+  />
 
-<img
-    v-if="$slidev.nav.clicks >= 6"
-    v-motion
-    :initial="{ opacity: 0}"
-    :enter="{ opacity: 1, transition: { delay: 250, duration: 500 } }"
-    class="absolute top-105 left-100 w-50 h-15"
-    src="/images/capsules/face_result2.png"
-/>
+  <img
+      class="absolute top-105 left-100 w-50 h-15"
+      src="/images/capsules/face_result2.png"
+  />
 
-<img
-    v-if="$slidev.nav.clicks >= 7"
-    v-motion
-    :initial="{ opacity: 0}"
-    :enter="{ opacity: 1, transition: { delay: 250, duration: 500 } }"
-    class="absolute top-60 left-170 w-50 h-40"
-    src="/images/capsules/face3.png"
-/>
+  <img
+      class="absolute top-60 left-170 w-50 h-40"
+      src="/images/capsules/face3.png"
+  />
 
-<img
-    v-if="$slidev.nav.clicks >= 8"
-    v-motion
-    :initial="{ opacity: 0}"
-    :enter="{ opacity: 1, transition: { delay: 250, duration: 500 } }"
-    class="absolute top-105 left-170 w-50 h-15"
-    src="/images/capsules/face_result3.png"
-/>
+  <img
+      class="absolute top-105 left-170 w-50 h-15"
+      src="/images/capsules/face_result3.png"
+  />
+</v-clicks>
 
 <!--
 classify images
@@ -375,51 +353,37 @@ But why the name "capsule"? We extracted this piece of paragraph from the origin
 
 
 ---
-preload: false
-clicks: 2
 ---
 
 # Convolution VS Capsule
 
 <img
-    v-if="$slidev.nav.clicks >= 1"
-    v-motion
-    :initial="{ opacity: 0}"
-    :enter="{ opacity: 1, transition: { delay: 250, duration: 750 } }"
+    v-click
     class="absolute top-30 left-60 w-40 h-40"
     src="/images/capsules/cnn_result_1.png"
-/>
-
-<img
-    v-if="$slidev.nav.clicks >= 1"
-    v-motion
-    :initial="{ opacity: 0}"
-    :enter="{ opacity: 1, transition: { delay: 1000, duration: 750 } }"
-    class="absolute top-30 left-130 w-40 h-40"
-    src="/images/capsules/cnn_result_2.png"
-/>
-
-<img
-    v-if="$slidev.nav.clicks >= 2"
-    v-motion
-    :initial="{ opacity: 0}"
-    :enter="{ opacity: 1, transition: { delay: 250, duration: 750 } }"
-    class="absolute top-80 left-60 w-40 h-40"
-    src="/images/capsules/capsule_result_1.png"
-/>
-
-<img
-    v-if="$slidev.nav.clicks >= 2"
-    v-motion
-    :initial="{ opacity: 0}"
-    :enter="{ opacity: 1, transition: { delay: 1000, duration: 750 } }"
-    class="absolute top-80 left-130 w-40 h-40"
-    src="/images/capsules/capsule_result_2.png"
 />
 
 <Footnotes separator v-after>
   <Footnote>Adapted from <a href="https://jhui.github.io/2017/11/03/Dynamic-Routing-Between-Capsules">Understanding Dynamic Routing between Capsules (Capsule Networks)</a></Footnote>
 </Footnotes>
+
+<img
+    v-after
+    class="absolute top-30 left-130 w-40 h-40"
+    src="/images/capsules/cnn_result_2.png"
+/>
+
+<img
+    v-click
+    class="absolute top-80 left-60 w-40 h-40"
+    src="/images/capsules/capsule_result_1.png"
+/>
+
+<img
+    v-after
+    class="absolute top-80 left-130 w-40 h-40"
+    src="/images/capsules/capsule_result_2.png"
+/>
 
 <!--
 Ok, what does this all even mean?
@@ -436,52 +400,38 @@ Ok, what does this all even mean? So, suppose we train a CNN to identify digits 
 
 
 ---
-preload: false
-clicks: 2
 hideInToc: true
 ---
 
 # Convolution VS Capsule
 
 <img
-    v-if="$slidev.nav.clicks >= 1"
-    v-motion
-    :initial="{ opacity: 0}"
-    :enter="{ opacity: 1, transition: { delay: 250, duration: 750 } }"
+    v-click
     class="absolute top-30 left-60 w-40 h-40"
     src="/images/capsules/capsule_result_1.png"
-/>
-
-<img
-    v-if="$slidev.nav.clicks >= 1"
-    v-motion
-    :initial="{ opacity: 0}"
-    :enter="{ opacity: 1, transition: { delay: 1000, duration: 750 } }"
-    class="absolute top-30 left-130 w-40 h-40"
-    src="/images/capsules/capsule_result_2.png"
-/>
-
-<img
-    v-if="$slidev.nav.clicks >= 2"
-    v-motion
-    :initial="{ opacity: 0}"
-    :enter="{ opacity: 1, transition: { delay: 250, duration: 750 } }"
-    class="absolute top-80 left-60 w-40 h-40"
-    src="/images/capsules/capsule_result_3.png"
-/>
-
-<img
-    v-if="$slidev.nav.clicks >= 2"
-    v-motion
-    :initial="{ opacity: 0}"
-    :enter="{ opacity: 1, transition: { delay: 1000, duration: 750 } }"
-    class="absolute top-80 left-130 w-40 h-40"
-    src="/images/capsules/capsule_result_4.png"
 />
 
 <Footnotes separator v-after>
   <Footnote>Adapted from <a href="https://jhui.github.io/2017/11/03/Dynamic-Routing-Between-Capsules">Understanding Dynamic Routing between Capsules (Capsule Networks)</a></Footnote>
 </Footnotes>
+
+<img
+    v-after
+    class="absolute top-30 left-130 w-40 h-40"
+    src="/images/capsules/capsule_result_2.png"
+/>
+
+<img
+    v-click
+    class="absolute top-80 left-60 w-40 h-40"
+    src="/images/capsules/capsule_result_3.png"
+/>
+
+<img
+    v-after
+    class="absolute top-80 left-130 w-40 h-40"
+    src="/images/capsules/capsule_result_4.png"
+/>
 
 <!--
 slightly tilted
