@@ -318,7 +318,7 @@ Most super-resolution solutions use convolutional neural networks, like SRCNN, E
 ---
 ---
 
-# Capsule Networks
+# Capsules
 
 <v-clicks>
 
@@ -528,13 +528,13 @@ In this example, we can see the reconstruction of the properties of the image by
 hideInToc: true
 ---
 
-# Capsules Networks
+# Capsules
 
 <v-clicks>
 
-- Capsules originally were used in classification tasks
+- Originally were used in classification tasks
   - Achieved state-of-the-art results
-- Capsules networks have been explored in other tasks
+- Capsules have been explored in other tasks
   - Object detection
   - Image segmentation
   - Visual question answering
@@ -553,7 +553,7 @@ In resume, capsules were originally used in classification tasks, and achieved s
 hideInToc: true
 ---
 
-# Capsules Networks
+# Capsules
 
 <v-clicks>
 

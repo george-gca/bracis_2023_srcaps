@@ -74,7 +74,7 @@ This is the diagram of the UPNet, which is responsible for the upsampling of the
 ---
 ---
 
-# Experiments Setup
+# Experimental Setup
 
 <v-clicks>
 
