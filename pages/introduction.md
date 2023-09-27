@@ -34,9 +34,9 @@
 </Footnotes>
 
 <!--
-the use of digital image is really common in areas like
+the use of digital image is really common in areas like medical diagnostics, remote sensing, surveillance, among others
 
-However, some of these applications are still inefficient
+However, some of these applications are still inefficient, e.g. due to old sensors still broadly in use, problems during the acquisition process, like lightning conditions
 
 Today, the use of digital imagery is becoming increasingly common in areas previously dominated by other technologies, such as medical diagnostics, surveillance and monitoring by security cameras and satellites, among others. However, some of these applications are still inefficient for their intended use. During the acquisition process, image quality can be degraded due to sensor failure, object displacement, inaccurate focus, or poor lighting. In addition, older equipment is still widely used, in contrast to the evolution of image display technology, such as screens with higher resolution and pixel density.
 -->
@@ -100,6 +100,7 @@ For most applications, high-resolution images are desirable and often necessary,
 
 ---
 hideInToc: true
+preload: false
 ---
 
 # "Enhance"
@@ -118,6 +119,8 @@ hideInToc: true
 
 <!--
 most well-known depiction of such a technique is shown here
+
+CSI
 
 The most well-known depiction of such a technique is shown here. In this scene from the TV show CSI, the investigators are able to zoom in on a reflection on a person's glasses and enhance the image to the point where they can read an information and gather new intel. Although this is a fictional scene, it is a good example of the expectations that people have regarding the capabilities of image processing techniques.
 -->
