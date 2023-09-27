@@ -34,10 +34,6 @@
 </Footnotes>
 
 <!--
-the use of digital image is really common in areas like medical diagnostics, remote sensing, surveillance, among others
-
-However, some of these applications are still inefficient, e.g. due to old sensors still broadly in use, problems during the acquisition process, like lightning conditions
-
 Today, the use of digital imagery is becoming increasingly common in areas previously dominated by other technologies, such as medical diagnostics, surveillance and monitoring by security cameras and satellites, among others. However, some of these applications are still inefficient for their intended use. During the acquisition process, image quality can be degraded due to sensor failure, object displacement, inaccurate focus, or poor lighting. In addition, older equipment is still widely used, in contrast to the evolution of image display technology, such as screens with higher resolution and pixel density.
 -->
 
@@ -87,12 +83,6 @@ hideInToc: true
 </figure>
 
 <!--
-For most applications, high-resolution images are desirable and often necessary
-
-clearer, sharper information for human perception and more detail for automatic interpretation
-
-Since the acquisition of HR images is not always possible, the use of techniques to increase image resolution are a great alternative
-
 For most applications, high-resolution images are desirable and often necessary, as they provide clearer, sharper information for human perception and a wealth of detail for automatic interpretation and representation by computer programs. However, the acquisition of high-resolution images is not always possible, either due to the limitations of the equipment or the environment in which the image is captured. In these cases, the use of techniques to increase image resolution are a viable solution.
 -->
 
@@ -118,10 +108,6 @@ preload: false
 </Footnotes>
 
 <!--
-most well-known depiction of such a technique is shown here
-
-CSI
-
 The most well-known depiction of such a technique is shown here. In this scene from the TV show CSI, the investigators are able to zoom in on a reflection on a person's glasses and enhance the image to the point where they can read an information and gather new intel. Although this is a fictional scene, it is a good example of the expectations that people have regarding the capabilities of image processing techniques.
 -->
 
@@ -171,10 +157,6 @@ The most well-known depiction of such a technique is shown here. In this scene f
 </figure>
 
 <!--
-a commonly used solution is upscaling
-
-the larger the scale, the less acceptable the results become
-
 In this context, a commonly used solution is upscaling, in which mathematical interpolation techniques (usually bilinear or bicubic) are applied to create a higher resolution version of the original image. By higher resolution I mean the number of pixels in an image. Although they generate satisfactory results for cases where the increase is 4x, the larger the scale, the less acceptable the results become, making it essential to use more robust resolution increase techniques.
 -->
 
@@ -224,10 +206,6 @@ In this context, a commonly used solution is upscaling, in which mathematical in
 </figure>
 
 <!--
-In recent years, deep learning has become a popular method for increasing the image resolution
-
-result is much sharper
-
 In recent years, deep learning has become a popular method for increasing the image resolution, a technique called super-resolution. The idea is to train a neural network to learn the mapping between low resolution and high resolution images. The network is trained on a dataset of low and high resolution image pairs. The network is then able to take a low resolution image as input and output a high resolution image. As you can see, the result is much sharper than the bicubic interpolation.
 -->
 
@@ -285,12 +263,6 @@ hideInToc: true
 </v-clicks>
 
 <!--
-classify images
-
-does it really understand what it means to be a person?
-
-rather questionable
-
 Most super-resolution solutions use convolutional neural networks, like SRCNN, EDSR, RDN, RCAN, just to name a few, and they generate images with good visual quality. But CNNs have known drawbacks. For instance, let's take this example of a network created to classify images. It correctly classified the image as a person. But does it really understand what it means to be a person? If, for example, we change the position of an eye with the mouth, what result does it generate? It still identified it as a person, although this is rather questionable. What if I rotate it? It should still classify it as a person right? But it does not
 -->
 
@@ -314,8 +286,6 @@ Most super-resolution solutions use convolutional neural networks, like SRCNN, E
 </v-clicks>
 
 <!--
-With these limitations in mind
-
 With these limitations in mind, Hinton and other authors introduced the concept of capsule neural networks in 2011. However, it was only in 2017 that Sabour et al. were able to implement a successful version of this network. Capsule networks propose to solve some of the main flaws found in CNNs, such as the inability to identify spatial hierarchy between elements and the lack of rotation invariance. They are also inspired by the human visual system, which is able to identify objects regardless of their position or rotation. Capsule networks have achieved good results in classification and segmentation tasks.
 -->
 
@@ -346,10 +316,6 @@ mark {
 </style>
 
 <!--
-We extracted this piece of paragraph from the original paper by Hinton
-
-Here, let's focus on the highlighted text
-
 But why the name "capsule"? We extracted this piece of paragraph from the original paper by Hinton, where it states: "Instead of aiming for viewpoint invariance in the activities of neurons that use a single scalar output to summarize the activities of a local pool of replicated feature detectors, artificial neural networks should use local capsules that perform some quite complicated internal computations on their inputs and then encapsulate the results of these computations into a small vector of highly informative outputs."
 -->
 
@@ -389,14 +355,6 @@ But why the name "capsule"? We extracted this piece of paragraph from the origin
 />
 
 <!--
-Ok, what does this all even mean?
-
-confidence level
-
-values representing properties of the class
-
-length of vector
-
 Ok, what does this all even mean? So, suppose we train a CNN to identify digits from the MNIST, and we ask it if these numbers are a seven. The outputs of the network show the confidence level of the network that the image is a seven. In the case of a capsule network, its output is not a single value, but a vector of values. Each value represents a property of the class, such as thickness, skew, width, etc. The length of the vector represents the probability that the image is a seven. The capsule network is able to identify the properties of the class and use them to classify it.
 -->
 
@@ -437,12 +395,6 @@ hideInToc: true
 />
 
 <!--
-slightly tilted
-
-length of the output vector is the probability
-
-does that hold in practice?
-
 Ok, the length of the output vector is the probability that the image is a seven. So what would be the output of the capsule network if the numbers were rotated, for example? Ideally, the capsule network would still identify the properties of the image and use them to classify it. The length of the vector would be about the same, but it would be slightely tilted, reflecting the rotation of the identified class. But does that hold in practice?
 -->
 
@@ -468,10 +420,6 @@ hideInToc: true
 </Footnotes>
 
 <!--
-does that hold in practice?
-
-Properties of the classes
-
 In this example, we can see the reconstruction of the properties of the image by a trained capsule network. The first column shows the properties of the image, such as scale, thickness, skew, etc. The second column shows the reconstruction of the image based on the properties identified by some of the capsules. As you can see, the network is able to identify the properties of the classes and use them to reconstruct it, like we can observe in the case of scale and thickness for the number 6, or the localized part in the number 4.
 -->
 
@@ -495,8 +443,6 @@ hideInToc: true
 </v-clicks>
 
 <!--
-In resume
-
 In resume, capsules were originally used in classification tasks, and achieved state-of-the-art results. They also have been explored in other tasks, such as object detection, image segmentation, and visual question answering.
 -->
 
@@ -519,9 +465,5 @@ hideInToc: true
 </v-clicks>
 
 <!--
-However
-
-Since then
-
 However, there have been few explorations in SISR tasks. Most of them are little modifications to the original CapsNet. But novel concepts have already been applied to CapsNets, such as different capsules types and new routing algorithms. In this work, we used some novel capsules concepts and applied to the SISR problem.
 -->

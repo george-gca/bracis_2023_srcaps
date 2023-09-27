@@ -12,14 +12,6 @@
 </figure>
 
 <!--
-This is the diagram of our model
-
-Based on the capsnet architecture introduced by LaLonde and Bagci
-
-During training
-
-sequence of capsule blocks
-
 This is the diagram of our model, named SRCaps. It is based on the CapsNet architecture introduced in the work of LaLonde and Bagci. During training, the model receives a batch of images patches pairs, one with low resolution and the other with high resolution. The low resolution image is fed to the encoder, which is composed of a single convolutional layer. The output of the encoder is then fed to a sequence of capsule blocks, each having a residual connection with its input. The output of the last capsule block is then fed to another convolutional layer, which has a residual connection with the output of the first convolutional layer. Then the output of the last convolutional layer is fed to the UPNet, which is responsible for the upsampling of the image. The output of the UPNet is then compared to the high resolution image using a loss function. The loss function is then used to update the weights of the model. The main difference between the training and validation phases is that during validation, the model receives a single LR/HR image pair, instead of a batch of patches per step.
 -->
 
@@ -39,10 +31,6 @@ hideInToc: true
 </figure>
 
 <!--
-main building block of our model
-
-sequence of convolutional capsules
-
 This is the diagram of the CapsBlock, which is the main building block of our model. It is composed of a sequence of convolutional capsules, each having a residual connection with its input. The output of each capsule is concatenated, creating what is called a dense connection, and then fed to a convolutional layer. The output of this convolutional layer is the output of this block.
 -->
 
@@ -62,10 +50,6 @@ hideInToc: true
 </figure>
 
 <!--
-responsible for the upsampling of the image
-
-sequence of convolutional layers intertwined with pixel shuffle layers, or subpixel convolutions
-
 This is the diagram of the UPNet, which is responsible for the upsampling of the image. It is composed of a sequence of convolutional layers, intertwined with layers of pixel shuffle, or subpixel convolutions. At the output of each pixel shuffle layer the image is upsampled by a factor of 2 (or 3). The output of the last pixel shuffle layer is the output of the UPNet. In our case, we only used the path above, since we focused on a 4x upsampling factor.
 -->
 
@@ -89,8 +73,6 @@ This is the diagram of the UPNet, which is responsible for the upsampling of the
 </v-clicks>
 
 <!--
-Model configuration like kernel size, batch size, number of epochs, and so on, please refer to the paper
-
 For training we used the training set of the DIV2K dataset, which is composed by a wide variety of image types. We investigated a miriad of loss functions combinations, including L1, SSIM, MS-SSIM, edge map, and a few others. For our final version we stick with the adaptive loss function. For more information about number of epochs, model params, and other details, please refer to the paper. For validation we used a collection of commonly used datasets, composed of the validation set of the DIV2K, as well as the Set5, Set14, B100, and Urban100 datasets. For metrics we used PSNR, SSIM, MS-SSIM, and FLIP. For more information about the metrics, please refer to the paper. A few questions might arise, besides why we used capsules. So let's answer a few of them.
 -->
 
@@ -119,10 +101,6 @@ preload: false
 </Footnotes>
 
 <!--
-A few questions might arise, besides why we used capsules.
-
-Why did we stick with adaptive loss?
-
 Why did we stick with adaptive loss? Well, we tested a lot of different loss functions, and we found that the adaptive loss function was the one that gave us the best results. The adaptive loss function is a generalization of a lot of loss functions, and it is defined by a shape parameter alpha and a scale parameter c. When alpha is equal to 2, the adaptive loss function is equivalent to the L2 loss function. When alpha is equal to 1, the adaptive loss function is equivalent to the Charbonnier loss function, which itself is a generalization of the L1 and L2 loss functions, and so on. In our case, we started with alpha equal to 1, which is equivalent to the Charbonnier loss function, and let the network learn during training the best value of alpha and c.
 -->
 
@@ -194,7 +172,5 @@ Why did we stick with adaptive loss? Well, we tested a lot of different loss fun
 </Footnotes>
 
 <!--
-Another question is
-
 Another question is, why not only use PSNR and SSIM? Well, PSNR and SSIM are good metrics, but they are not perfect. For example, let's take a look at this image. This is the reference image. Here we can see a lot of different variations of the reference image. One thing that they all have in common is that they have the same PSNR values calculated from the reference image, but clearly some are closer to the original image, or at least more recognizable, than others. For that reason, we decided to use a combination of metrics, including PSNR and SSIM, but also MS-SSIM and FLIP.
 -->
