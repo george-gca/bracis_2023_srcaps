@@ -1,6 +1,8 @@
 import type { CSSProperties } from 'vue';
 
 export function resolveAssetUrl(url: string) {
+  console.log("baseUrl: " + import.meta.env.BASE_URL);
+  console.log(url);
   if (url.startsWith('/')) {
     const baseUrl = import.meta.env.BASE_URL;
     if (baseUrl.endsWith('/')) {
