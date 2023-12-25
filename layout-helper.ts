@@ -1,7 +1,14 @@
 import type { CSSProperties } from 'vue';
 
 export function resolveAssetUrl(url: string) {
-  if (url.startsWith('/')) return import.meta.env.BASE_URL + url.slice(1);
+  if (url.startsWith('/')) {
+    const baseUrl = import.meta.env.BASE_URL;
+    if (baseUrl.endsWith('/')) {
+      return baseUrl + url.slice(1);
+    } else {
+      return baseUrl + url;
+    }
+  }
   return url;
 }
 
