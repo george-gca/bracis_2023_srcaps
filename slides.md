@@ -24,7 +24,7 @@ info: |
   Presented at the 12th Brazilian Conference on Intelligent Systems (BRACIS 2023)
   Authors: George Corrêa de Araújo, Artur Jordão, Hélio Pedrini
 
-  - [Paper]()
+  - [Paper](https://link.springer.com/chapter/10.1007/978-3-031-45392-2_8)
   - [GitHub](https://github.com/george-gca/bracis_2023_srcaps)
 ---
 
@@ -48,7 +48,7 @@ info: |
 
 <!-- https://carbon-elements.netlify.app/icons/examples/preview/ -->
 <div class="abs-tr mx-26 my-6 flex gap-2 w">
-  <a href="https://drive.google.com/file/d/1iSkqmgex7FveamrWbF2jfKJwKEDZbbXy/view?usp=sharing" target="_blank" alt="Paper"
+  <a href="https://link.springer.com/chapter/10.1007/978-3-031-45392-2_8" target="_blank" alt="Paper"
     class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <carbon-white-paper />
   </a>
