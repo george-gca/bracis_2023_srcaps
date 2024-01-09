@@ -1,17 +1,17 @@
 import type { CSSProperties } from 'vue';
 
 export function resolveAssetUrl(url: string) {
-  console.log("baseUrl: " + import.meta.env.BASE_URL);
-  console.log(url);
-  if (url.startsWith('/')) {
+  if(url.startsWith('/')) {
     const baseUrl = import.meta.env.BASE_URL;
-    if (baseUrl.endsWith('/')) {
-      return baseUrl + url.slice(1);
-    } else {
-      return baseUrl + url;
-    }
+    if(baseUrl.endsWith('/')) return baseUrl + url.slice(1);
+    else return baseUrl + url;
+  } else if(url.startsWith('http')) {
+    return url;
+  } else {
+    const baseUrl = import.meta.env.BASE_URL;
+    if(baseUrl.endsWith('/')) return baseUrl + url;
+    else return `${baseUrl}/${url}`;
   }
-  return url;
 }
 
 export function handleBackground(background?: string, dim = false): CSSProperties {
