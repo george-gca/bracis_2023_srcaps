@@ -4,6 +4,8 @@
 
 This presentation is powered by [Slidev](https://github.com/slidevjs/slidev) with [slidev-theme-academic](https://github.com/alexanderdavide/slidev-theme-academic).
 
+![Cover slide](cover.png)
+
 To run the slide show locally:
 
 - [install node.js](https://george-gca.github.io/blog/2023/slidev_for_non_web_devs/)
